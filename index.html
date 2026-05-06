@@ -1,59 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/index.css">
+  <script src="./js/index.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <header class="Header">
 
-    <div class="Header-menulines"></div>
-   <a href="" class="Header-logo" > STKLM</a>
+    <div class="Header-logo">
+      <img src="./assets/mainlogo.png" alt="Logo" class="Header-logo">
+    </div>
 
-   <nav class="Header-nav">
-    <ul class="Header-ul">
-      <li class="Header-li">home</li>
-      <li class="Header-li">pages</li>
-      <li class="Header-li">portfolio</li>
-      <li class="Header-li">blog</li>
-      <li class="Header-li">shop</li>
-    </ul>
-   </nav>
+    <div class="Header-nav">
+      <div class="Header-ul">
+        <div class="Header-li">home</div>
+        <div class="Header-li">about</div>
+        <div class="Header-li">contact</div>
+        <div class="Header-li">pricing</div>
+      </div>
+
+
+    </div>
+
+    <div class="Header-burger">
+      <div class="Header-span">.</div>
+      <div class="Header-span">.</div>
+      <div class="Header-span">.</div>
+    </div>
+
+
+    <div class="Off-screen-menu">
+      <div class="Off-screen-inf">
+
+      <div class="Off-screen-exit">
+      <div class="Off-screen-span"></div>
+      <div class="Off-screen-span"></div>
+      <div class="Off-screen-span"></div>
+    </div>
+
+     <div class="Off-screen-logo">
+      <img src="./assets/mainlogo.png" alt="Logo" class="Off-screen-logo">
+     </div>
+    
+      <div class="Off-screen-text">
+        <div class="Off-screen-h3">superb sound</div>
+        <div class="Off-screen-p">Lorem ipsum dolor sit amet, pri no fugit libris regione, te noster officiis sensibus pri, nonumy tritani
+          vulputate vix in. Ius illud voluptua te, eam unum error cu</div>
+      </div>
+       
+      <div class="Off-screen-social-media">
+      <img src="./assets/twitter-154-svgrepo-com.svg" alt="twitter" class="Twitter-link">
+      <img src="./assets/facebook-176-svgrepo-com.svg" alt="facebook" class="Facebook-link">
+      <img src="./assets/linkedin-161-svgrepo-com.svg" alt="linkedin" class="Linkedin-link">
+      </div>
+   
+    </div>
+
+    </div>
+
+
   </header>
 
   <main class="Main">
 
-    <section class="Product">
+    <div class="Hero">
+      <div class="Hero-grid Hero-grid--up">
 
-      <div class="Product-columns">
-       <img src="" alt="img" class="Product-img">
+        <div class="Grid-block Grid-block--lft">
 
-       <div class="Product-column">
-        <h2 class="Product-h2">B&Y LAMP</h2>
-        <p class="Product-p">Looking for a way to showcase your products,
+          <img src="./assets/main-img-headphonesjpg" alt="Headphones product" class="Hero-mainimg">
 
-          portfolio, services or simply yourself and your work? Look no
+          <div class="Grid-block-left-text">
+            <h3 class="Grid-h3"> hear the music</h3>
+            <p class="Grid-block Grid-block-p--lft">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, fuga?</p>
+            <button class="Button-shop"> shop now</button>
+          </div>
 
-          more, becouse with this stylish & modern demo you can
+        </div>
 
-          showcase simply anyhting in a modern and clean manner.</p>
+        <div class="Grid-block Grid-block--middle">
+          <h2 class="Grid-h2">get the app for your phone</h2>
+          <button class="Button-shop Button-shop--middle"> shop now</button>
+        </div>
 
-          <a href="" title="check it out" class="Product-button"> Check it out</a>
-       </div>
- 
+
+        <div class="Grid-video">
+          <img src="./assets/girlheadphones.jpg" class="Grid-video-img" title="video"></img>
+        </div>
+
+        <div class="Grid-block-reviews">
+
+          <div class="Grid-block-review Grid-block-review--right">
+          <h2 class="Grid-h2"> what they say</h2>
+          <p class="Grid-block Grid-block-p--review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            ratione atque omnis?
+            Error nulla natus eligendi quasi dignissimos accusantium iste?</p>
+          <div class="Review-inf">
+            <div class="Review-name">nina torino</div>
+            <div class="Review-profession">HR Specialist</div>
+          </div>
+        </div>
+
+            <div class="Grid-block-review Grid-block-review--middle">
+          <h2 class="Grid-h2"> what they say</h2>
+          <p class="Grid-block Grid-block-p--review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            ratione atque omnis?
+            Error nulla natus eligendi quasi dignissimos accusantium iste?</p>
+          <div class="Review-inf">
+            <div class="Review-name">nina torino</div>
+            <div class="Review-profession">HR Specialist</div>
+          </div>
+        </div>
+
+            <div class="Grid-block-review Grid-block-review--left">
+          <h2 class="Grid-h2"> what they say</h2>
+          <p class="Grid-block Grid-block-p--review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            ratione atque omnis?
+            Error nulla natus eligendi quasi dignissimos accusantium iste?</p>
+          <div class="Review-inf">
+            <div class="Review-name">nina torino</div>
+            <div class="Review-profession">HR Specialist</div>
+          </div>
+        </div>
+
+          <div class="Grid-slide">
+            <div class="Grid-span Grid-span--right">.</div>
+            <div class="Grid-span Grid-span--middle">.</div>
+            <div class="Grid-span Grid-span--left">.</div>
+          </div>
+
+        </div>
       </div>
-    </section>
- 
+
+      <div class="Hero-grid Hero-grid--down">
+
+        <div class="Grid-block Grid-down--lft">
 
 
+          <iframe id="Google-maps-location" width="100%" height="100%"
+            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+        </div>
+
+        <div class="Grid-block Grid-block-down--right">
+
+          <div class="Grid-block-down-text">
+            <h2 class="Grid-block Grid-block-down--h3"> superb sound</h2>
+            <p class="Grid-block Grid-block-p--right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+              explicabo
+              quibusdam omnis sit consectetur repellendus eos error repellat nam enim?</p>
+            <button class="Button-shop"> shop now </button>
+          </div>
+
+          <img src="./assets/main-2-headphones.jpg" alt="Headphones product"
+            class="Headphones-mainimg Headphones-mainimg--down">
+        </div>
+
+        <div class="Grid-block Grid-block-down--down">
+          <img src="./assets/main-img-3.jpg" alt="Girl with headphones" class="Grid-block Grid-block-down--img">
+        </div>
+
+        <div class="Grid-block Grid-block-down--middle">
+          <div class="Grid-block-down-text">
+          <img src="./assets/svgicon.png" alt="icon" class="Grid-svg">
+          <h4 class="Grid-block Grid-block-down--h4"> new wave</h4>
+          <p class="Grid-block Grid-block-down-p--middle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, minus.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="Newsletter-section">
+
+      <div class="Newsletter-text">
+        
+        <div class="Newsletter-span">newsletter</div>
+
+        <div class="Newsletter-form">
+      
+       <input type="email" id="Newsletter-email" name="Email" placeholder="Your email...">
+       <label>
+        <input type="submit" name="image" value="two" class="Newsletter-submit-button">
+       <img src="./assets/svgicon.png" alt="Send" class="Send-button">
+       </label>
+</div>
+
+
+      </div>
+    </div>
 
   </main>
-  
+
 </body>
+
 </html>
