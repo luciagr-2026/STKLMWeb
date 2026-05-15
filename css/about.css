@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    font-family: "Arimo", sans-serif;
+}
+
+
+
+body {
+    background-color: #ffffff;
+}
+
+
+.Header {
+    width: 100%;
+    min-height: 6.25rem;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.Header-logo {
+    width: 3.125rem;
+    margin-left: .625rem;
+}
+
+.Header-left {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5rem;
+    margin-right: 1.875rem;
+    align-items: center;
+}
+
+.Header-nav {
+    display: flex;
+}
+
+@media (max-width: 980px){
+    .Header-nav{
+        display: none;
+    }
+}
+
+.Header-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2.5rem;
+}
+
+
+.Off-screen-menu {
+   width: 25rem;
+    min-height: 37.5rem;
+    position: absolute;
+    background-color: #f8edeb;
+
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+}
+
+.Off-screen-menu.Active {
+
+  right: 0;
+
+}
+
+
+.Off-screen-menu-span:nth-child(1).Active {
+    content: '';
+    background-color: #895737;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    width: 1.375rem;
+    min-height: .25rem;
+    transform: rotate(45deg);
+}
+
+.Off-screen-menu-span:nth-child(2).Active {
+    content: '';
+    background-color: #895737;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    width: 1.375rem;
+    min-height: .25rem;
+    transform: rotate(-45deg);
+}
+
+.Off-screen-menu-span:nth-child(1){
+content: '';
+    background-color: #895737;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    width: 1.375rem;
+    min-height: .25rem;
+    transform: rotate(360deg);
+    /* transition: .1s ease; */
+}
+
+.Off-screen-menu-span:nth-child(2){
+  display: none;
+}
+
+
+
+.Off-screen-menu-inf {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 40% auto;
+}
+
+.Off-screen-menu-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 3.75rem;
+    gap: 2.5rem;
+}
+
+.Off-screen-menu-h1 {
+    text-transform: uppercase;
+}
+
+.Off-screen-menu-socialmedia {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .75rem;
+
+}
+
+.Facebook-link,
+.Twitter-link,
+.Linkedin-link {
+    width: 1.0625rem;
+
+}
+
+.About-introduction {
+    width: 100%;
+    min-height: 25rem;
+
+}
+
+
+
+
+.About-introduction-h1 {
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 650;
+
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+    color: #ffffff;
+
+}
+
+
+.Mission-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: grid;
+}
+
+.Mission-columns {
+
+    width: 80%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 200px;
+
+}
+
+@media (max-width: 980px){
+    .Mission-columns{
+    display: flex;
+    flex-flow: column wrap;
+    }
+}
+
+
+.Mission-column.Mission-column--right {
+    grid-column: 1/ 2;
+    grid-row: 1 / 2;
+    align-self: center;
+
+}
+
+
+.Mission-video {
+    width: 31.25rem;
+    min-height: 31.25rem;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.Mission-video-img{
+    width: 100%;
+    min-height: 31.25rem;
+    background-size: fill;
+    position: absolute;
+}
+
+.Mission-video-play{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.Mission-column.Mission-column--left {
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+.Mission-column-left-text {
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3.125rem;
+
+}
+
+
+@media (max-width: 980px){
+  .Mission-column-left-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3.125rem;
+    padding: 2.5rem;
+    }
+}
+
+
+
+.Mission-h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+.Mission-button {
+   width: 9.375rem;
+  min-height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: #a98467;
+  color: white;
+
+  opacity: 0.7;
+text-align: center;
+}
+
+.Mission-button:hover {
+opacity: 1;
+}
+
+
+.Mission-values {
+    display: grid;
+    grid-column: span 2;
+    grid-row: 2 / 3;
+
+
+}
+
+.Mission-values-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.25rem;
+}
+
+
+.Mission-column {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.25rem;
+
+    align-items: start;
+
+}
+
+
+
+.Mission-value-img {
+  
+    width: 3.75rem;
+    min-height: 3.75rem;
+    border-radius: 2.5rem;
+    align-self: center;
+}
+
+.Mission-value-img:hover {
+transform: translateY(-0.625rem);
+}
+
+.Mission-h4 {
+    text-transform: uppercase;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.Newsletter-subcription {
+width: 100%;
+min-height: 12.5rem;
+background-color: #895737;
+
+}
+
+@media (max-width: 980px){
+
+.Newsletter-subcription{
+min-height: 18.75rem;
+display: flex;
+flex-flow: column nowrap;
+gap: 2.5rem;
+
+    }
+}
+
+
+
+.Newsletter-text {
+   
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+align-items: center;
+
+transform: translateY(6.25rem);
+}
+
+@media (max-width: 980px){
+
+.Newsletter-text{
+display: grid;
+flex-flow: column nowrap;
+gap: 3.125rem; 
+
+    }
+}
+
+
+.Newsletter-h2 {
+text-transform: uppercase;
+font-size: 2.5rem;
+font-weight: 550;
+color: #a98467;
+}
+
+#Newsletter-email {
+width: 31.25rem;
+min-height: 1.875rem;
+background-color: #895737;
+position: relative;
+
+}
+
+
+.Newsletter-undeline{
+content: '';
+position: fixed;
+width: 34.375rem;
+min-height: .125rem;
+background-color: #a98467;
+bottom: 2%;
+right: calc(14% - 5px);
+}
+
+#Newsletter-submit{
+    position: absolute;
+    transform: translateX(-3.125rem);
+}
+
+.Submit-nesletter-svg{
+    position: absolute;
+    transform: translateX(-3.125rem);
+    background-color: #895737;
+    width: 3.125rem;
+}
